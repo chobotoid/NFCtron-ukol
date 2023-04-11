@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F39DB59229E57837000A2376 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59129E57837000A2376 /* CustomTabBar.swift */; };
+		F39DB59429E5BFAF000A2376 /* DailyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59329E5BFAF000A2376 /* DailyImageView.swift */; };
+		F39DB59829E5C655000A2376 /* DailyViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59729E5C655000A2376 /* DailyViewViewModel.swift */; };
+		F39DB59A29E5C6F6000A2376 /* DailyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59929E5C6F6000A2376 /* DailyDescriptionView.swift */; };
+		F39DB59D29E5DD52000A2376 /* DailyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59C29E5DD52000A2376 /* DailyViewModel.swift */; };
+		F3CD5CAC29E2D34C00CFEF8A /* NFCtron_ukolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CAB29E2D34C00CFEF8A /* NFCtron_ukolApp.swift */; };
+		F3CD5CAE29E2D34C00CFEF8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CAD29E2D34C00CFEF8A /* ContentView.swift */; };
+		F3CD5CB029E2D34D00CFEF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CD5CAF29E2D34D00CFEF8A /* Assets.xcassets */; };
+		F3CD5CB329E2D34D00CFEF8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CD5CB229E2D34D00CFEF8A /* Preview Assets.xcassets */; };
+		F3CD5CBD29E2D34D00CFEF8A /* NFCtron_ukolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CBC29E2D34D00CFEF8A /* NFCtron_ukolTests.swift */; };
+		F3CD5CC729E2D34D00CFEF8A /* NFCtron_ukolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CC629E2D34D00CFEF8A /* NFCtron_ukolUITests.swift */; };
+		F3CD5CC929E2D34D00CFEF8A /* NFCtron_ukolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CC829E2D34D00CFEF8A /* NFCtron_ukolUITestsLaunchTests.swift */; };
+		F3CD5CD729E2D3DC00CFEF8A /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CD629E2D3DC00CFEF8A /* MenuBarView.swift */; };
+		F3CD5CD929E2D3E900CFEF8A /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CD829E2D3E900CFEF8A /* DailyView.swift */; };
+		F3CD5CDB29E2D3FB00CFEF8A /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CDA29E2D3FB00CFEF8A /* LaunchesView.swift */; };
+		F3CD5CDF29E2FE4200CFEF8A /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3CD5CB929E2D34D00CFEF8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3CD5CA029E2D34C00CFEF8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3CD5CA729E2D34C00CFEF8A;
+			remoteInfo = "NFCtron-ukol";
+		};
+		F3CD5CC329E2D34D00CFEF8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3CD5CA029E2D34C00CFEF8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3CD5CA729E2D34C00CFEF8A;
+			remoteInfo = "NFCtron-ukol";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F39DB59129E57837000A2376 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		F39DB59329E5BFAF000A2376 /* DailyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImageView.swift; sourceTree = "<group>"; };
+		F39DB59729E5C655000A2376 /* DailyViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewViewModel.swift; sourceTree = "<group>"; };
+		F39DB59929E5C6F6000A2376 /* DailyDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDescriptionView.swift; sourceTree = "<group>"; };
+		F39DB59C29E5DD52000A2376 /* DailyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewModel.swift; sourceTree = "<group>"; };
+		F3CD5CA829E2D34C00CFEF8A /* NFCtron-ukol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFCtron-ukol.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CD5CAB29E2D34C00CFEF8A /* NFCtron_ukolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCtron_ukolApp.swift; sourceTree = "<group>"; };
+		F3CD5CAD29E2D34C00CFEF8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3CD5CAF29E2D34D00CFEF8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3CD5CB229E2D34D00CFEF8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3CD5CB829E2D34D00CFEF8A /* NFCtron-ukolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NFCtron-ukolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CD5CBC29E2D34D00CFEF8A /* NFCtron_ukolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCtron_ukolTests.swift; sourceTree = "<group>"; };
+		F3CD5CC229E2D34D00CFEF8A /* NFCtron-ukolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NFCtron-ukolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CD5CC629E2D34D00CFEF8A /* NFCtron_ukolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCtron_ukolUITests.swift; sourceTree = "<group>"; };
+		F3CD5CC829E2D34D00CFEF8A /* NFCtron_ukolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCtron_ukolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3CD5CD629E2D3DC00CFEF8A /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		F3CD5CD829E2D3E900CFEF8A /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
+		F3CD5CDA29E2D3FB00CFEF8A /* LaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesView.swift; sourceTree = "<group>"; };
+		F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3CD5CA529E2D34C00CFEF8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CD5CB529E2D34D00CFEF8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CD5CBF29E2D34D00CFEF8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F39DB59529E5C5F8000A2376 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F39DB59629E5C608000A2376 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F39DB59729E5C655000A2376 /* DailyViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F39DB59B29E5DD38000A2376 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F39DB59C29E5DD52000A2376 /* DailyViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3CD5C9F29E2D34C00CFEF8A = {
+			isa = PBXGroup;
+			children = (
+				F3CD5CAA29E2D34C00CFEF8A /* NFCtron-ukol */,
+				F3CD5CBB29E2D34D00CFEF8A /* NFCtron-ukolTests */,
+				F3CD5CC529E2D34D00CFEF8A /* NFCtron-ukolUITests */,
+				F3CD5CA929E2D34C00CFEF8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3CD5CA929E2D34C00CFEF8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5CA829E2D34C00CFEF8A /* NFCtron-ukol.app */,
+				F3CD5CB829E2D34D00CFEF8A /* NFCtron-ukolTests.xctest */,
+				F3CD5CC229E2D34D00CFEF8A /* NFCtron-ukolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3CD5CAA29E2D34C00CFEF8A /* NFCtron-ukol */ = {
+			isa = PBXGroup;
+			children = (
+				F39DB59B29E5DD38000A2376 /* Models */,
+				F39DB59629E5C608000A2376 /* ViewModels */,
+				F39DB59529E5C5F8000A2376 /* API */,
+				F3CD5CD529E2D3BE00CFEF8A /* Views */,
+				F3CD5CAB29E2D34C00CFEF8A /* NFCtron_ukolApp.swift */,
+				F3CD5CAD29E2D34C00CFEF8A /* ContentView.swift */,
+				F3CD5CAF29E2D34D00CFEF8A /* Assets.xcassets */,
+				F3CD5CB129E2D34D00CFEF8A /* Preview Content */,
+			);
+			path = "NFCtron-ukol";
+			sourceTree = "<group>";
+		};
+		F3CD5CB129E2D34D00CFEF8A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5CB229E2D34D00CFEF8A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3CD5CBB29E2D34D00CFEF8A /* NFCtron-ukolTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5CBC29E2D34D00CFEF8A /* NFCtron_ukolTests.swift */,
+			);
+			path = "NFCtron-ukolTests";
+			sourceTree = "<group>";
+		};
+		F3CD5CC529E2D34D00CFEF8A /* NFCtron-ukolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5CC629E2D34D00CFEF8A /* NFCtron_ukolUITests.swift */,
+				F3CD5CC829E2D34D00CFEF8A /* NFCtron_ukolUITestsLaunchTests.swift */,
+			);
+			path = "NFCtron-ukolUITests";
+			sourceTree = "<group>";
+		};
+		F3CD5CD529E2D3BE00CFEF8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5CDD29E2FDE900CFEF8A /* Elements */,
+				F3CD5CDC29E2FDBF00CFEF8A /* Menu */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3CD5CDC29E2FDBF00CFEF8A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5CD629E2D3DC00CFEF8A /* MenuBarView.swift */,
+				F3CD5CD829E2D3E900CFEF8A /* DailyView.swift */,
+				F3CD5CDA29E2D3FB00CFEF8A /* LaunchesView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		F3CD5CDD29E2FDE900CFEF8A /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItem.swift */,
+				F39DB59129E57837000A2376 /* CustomTabBar.swift */,
+				F39DB59329E5BFAF000A2376 /* DailyImageView.swift */,
+				F39DB59929E5C6F6000A2376 /* DailyDescriptionView.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3CD5CA729E2D34C00CFEF8A /* NFCtron-ukol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3CD5CCC29E2D34D00CFEF8A /* Build configuration list for PBXNativeTarget "NFCtron-ukol" */;
+			buildPhases = (
+				F3CD5CA429E2D34C00CFEF8A /* Sources */,
+				F3CD5CA529E2D34C00CFEF8A /* Frameworks */,
+				F3CD5CA629E2D34C00CFEF8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NFCtron-ukol";
+			productName = "NFCtron-ukol";
+			productReference = F3CD5CA829E2D34C00CFEF8A /* NFCtron-ukol.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3CD5CB729E2D34D00CFEF8A /* NFCtron-ukolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3CD5CCF29E2D34D00CFEF8A /* Build configuration list for PBXNativeTarget "NFCtron-ukolTests" */;
+			buildPhases = (
+				F3CD5CB429E2D34D00CFEF8A /* Sources */,
+				F3CD5CB529E2D34D00CFEF8A /* Frameworks */,
+				F3CD5CB629E2D34D00CFEF8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3CD5CBA29E2D34D00CFEF8A /* PBXTargetDependency */,
+			);
+			name = "NFCtron-ukolTests";
+			productName = "NFCtron-ukolTests";
+			productReference = F3CD5CB829E2D34D00CFEF8A /* NFCtron-ukolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3CD5CC129E2D34D00CFEF8A /* NFCtron-ukolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3CD5CD229E2D34D00CFEF8A /* Build configuration list for PBXNativeTarget "NFCtron-ukolUITests" */;
+			buildPhases = (
+				F3CD5CBE29E2D34D00CFEF8A /* Sources */,
+				F3CD5CBF29E2D34D00CFEF8A /* Frameworks */,
+				F3CD5CC029E2D34D00CFEF8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3CD5CC429E2D34D00CFEF8A /* PBXTargetDependency */,
+			);
+			name = "NFCtron-ukolUITests";
+			productName = "NFCtron-ukolUITests";
+			productReference = F3CD5CC229E2D34D00CFEF8A /* NFCtron-ukolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3CD5CA029E2D34C00CFEF8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F3CD5CA729E2D34C00CFEF8A = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					F3CD5CB729E2D34D00CFEF8A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F3CD5CA729E2D34C00CFEF8A;
+					};
+					F3CD5CC129E2D34D00CFEF8A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F3CD5CA729E2D34C00CFEF8A;
+					};
+				};
+			};
+			buildConfigurationList = F3CD5CA329E2D34C00CFEF8A /* Build configuration list for PBXProject "NFCtron-ukol" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3CD5C9F29E2D34C00CFEF8A;
+			productRefGroup = F3CD5CA929E2D34C00CFEF8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3CD5CA729E2D34C00CFEF8A /* NFCtron-ukol */,
+				F3CD5CB729E2D34D00CFEF8A /* NFCtron-ukolTests */,
+				F3CD5CC129E2D34D00CFEF8A /* NFCtron-ukolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3CD5CA629E2D34C00CFEF8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CD5CB329E2D34D00CFEF8A /* Preview Assets.xcassets in Resources */,
+				F3CD5CB029E2D34D00CFEF8A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CD5CB629E2D34D00CFEF8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CD5CC029E2D34D00CFEF8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3CD5CA429E2D34C00CFEF8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39DB59429E5BFAF000A2376 /* DailyImageView.swift in Sources */,
+				F3CD5CDF29E2FE4200CFEF8A /* CustomTabBarItem.swift in Sources */,
+				F3CD5CD929E2D3E900CFEF8A /* DailyView.swift in Sources */,
+				F39DB59229E57837000A2376 /* CustomTabBar.swift in Sources */,
+				F3CD5CD729E2D3DC00CFEF8A /* MenuBarView.swift in Sources */,
+				F39DB59D29E5DD52000A2376 /* DailyViewModel.swift in Sources */,
+				F3CD5CAE29E2D34C00CFEF8A /* ContentView.swift in Sources */,
+				F3CD5CDB29E2D3FB00CFEF8A /* LaunchesView.swift in Sources */,
+				F39DB59A29E5C6F6000A2376 /* DailyDescriptionView.swift in Sources */,
+				F3CD5CAC29E2D34C00CFEF8A /* NFCtron_ukolApp.swift in Sources */,
+				F39DB59829E5C655000A2376 /* DailyViewViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CD5CB429E2D34D00CFEF8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CD5CBD29E2D34D00CFEF8A /* NFCtron_ukolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CD5CBE29E2D34D00CFEF8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CD5CC929E2D34D00CFEF8A /* NFCtron_ukolUITestsLaunchTests.swift in Sources */,
+				F3CD5CC729E2D34D00CFEF8A /* NFCtron_ukolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3CD5CBA29E2D34D00CFEF8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3CD5CA729E2D34C00CFEF8A /* NFCtron-ukol */;
+			targetProxy = F3CD5CB929E2D34D00CFEF8A /* PBXContainerItemProxy */;
+		};
+		F3CD5CC429E2D34D00CFEF8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3CD5CA729E2D34C00CFEF8A /* NFCtron-ukol */;
+			targetProxy = F3CD5CC329E2D34D00CFEF8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F3CD5CCA29E2D34D00CFEF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3CD5CCB29E2D34D00CFEF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3CD5CCD29E2D34D00CFEF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NFCtron-ukol/Preview Content\"";
+				DEVELOPMENT_TEAM = NV3Z76ZDS4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jangutwirth.NFCtron-ukol";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3CD5CCE29E2D34D00CFEF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NFCtron-ukol/Preview Content\"";
+				DEVELOPMENT_TEAM = NV3Z76ZDS4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jangutwirth.NFCtron-ukol";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3CD5CD029E2D34D00CFEF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NV3Z76ZDS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jangutwirth.NFCtron-ukolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NFCtron-ukol.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NFCtron-ukol";
+			};
+			name = Debug;
+		};
+		F3CD5CD129E2D34D00CFEF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NV3Z76ZDS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jangutwirth.NFCtron-ukolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NFCtron-ukol.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NFCtron-ukol";
+			};
+			name = Release;
+		};
+		F3CD5CD329E2D34D00CFEF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NV3Z76ZDS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jangutwirth.NFCtron-ukolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NFCtron-ukol";
+			};
+			name = Debug;
+		};
+		F3CD5CD429E2D34D00CFEF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NV3Z76ZDS4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jangutwirth.NFCtron-ukolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NFCtron-ukol";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3CD5CA329E2D34C00CFEF8A /* Build configuration list for PBXProject "NFCtron-ukol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CD5CCA29E2D34D00CFEF8A /* Debug */,
+				F3CD5CCB29E2D34D00CFEF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3CD5CCC29E2D34D00CFEF8A /* Build configuration list for PBXNativeTarget "NFCtron-ukol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CD5CCD29E2D34D00CFEF8A /* Debug */,
+				F3CD5CCE29E2D34D00CFEF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3CD5CCF29E2D34D00CFEF8A /* Build configuration list for PBXNativeTarget "NFCtron-ukolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CD5CD029E2D34D00CFEF8A /* Debug */,
+				F3CD5CD129E2D34D00CFEF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3CD5CD229E2D34D00CFEF8A /* Build configuration list for PBXNativeTarget "NFCtron-ukolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CD5CD329E2D34D00CFEF8A /* Debug */,
+				F3CD5CD429E2D34D00CFEF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3CD5CA029E2D34C00CFEF8A /* Project object */;
+}
