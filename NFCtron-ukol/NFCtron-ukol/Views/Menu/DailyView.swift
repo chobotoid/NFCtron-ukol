@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct DailyView: View {
+        
+    @ObservedObject var vm: DailyViewViewModel
+        
+    @State var title: String
     
-//    @StateObject DailyViewViewModel
+    @State var description: String
+    
+    init() {
+        self.title = "Title"
+        self.description = "Description"
+        vm = DailyViewViewModel()
+    }
     
     var body: some View {
-        ScrollView (.vertical) {
-            DailyImageView()
-            DailyDescriptionView(title: <#T##Binding<String>#>, description: <#T##Binding<String>#>)
+        ScrollView (.vertical, showsIndicators: false) {
+            DailyImageView(title: vm.model.title ?? "Title not loaded", date: vm.model.date ?? "Date not loaded", imageURL: vm.model.imageURL ?? "DEFAULT", hdImageURL: vm.model.hdImageURL ?? "DEFAULT")
+            DailyDescriptionView(title: "Explanation", description: vm.model.description ?? "Explanation not loaded")
         }
+        .padding(.horizontal, 40)
+        .background(Color("BackgroundColor"))
     }
 }
 

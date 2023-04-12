@@ -9,8 +9,8 @@ import SwiftUI
 
 struct DailyDescriptionView: View {
     
-    @Binding var title: String
-    @Binding var description: String
+    var title: String
+    var description: String
     
     var body: some View {
         VStack (alignment: .leading, spacing: 10) {
@@ -19,14 +19,14 @@ struct DailyDescriptionView: View {
             Text(description)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .border(.black)
+//        .border(.black)
     }
 }
 
 struct DailyDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
-        @State var title = "Title"
-        @State var desc = "wdiajowi jaowijoa idwjdoaiwj doi jowijodija oiwj oaiwj odi waoi oi wdjaodiaowijaowijdoa awjo idaw"
-        DailyDescriptionView(title: $title, description: $desc)
+        var title = "Title"
+        var desc = "wdiajowi jaowijoa idwjdoaiwj doi jowijodija oiwj oaiwj odi waoi oi wdjaodiaowijaowijdoa awjo idaw"
+        DailyDescriptionView(title: title, description: desc)
     }
 }

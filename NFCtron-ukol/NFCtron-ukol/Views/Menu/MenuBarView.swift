@@ -9,30 +9,23 @@ import SwiftUI
 
 struct MenuBarView: View {
     
-    @State private var selectedIndex: Int = 0
+    @State private var tabSelection: CustomTabBarItem = .daily
     
     var body: some View {
-        ZStack {
-            VStack {
-                TabView(selection: $selectedIndex) {
-                    DailyView()
-                        .tag(0)
-                    LaunchesView()
-                        .tag(1)
-                }
-            }
-//            .border(.green)
-            
-            VStack {
-                Spacer()
-                CustomTabBar(selectedIndex: $selectedIndex)
-            }
-//            .border(.yellow)
+        CustomTabBarView(selection: $tabSelection) {
+            DailyView()
+                .customTabItem(tab: .daily, selection: $tabSelection)
+            LaunchesView()
+                .customTabItem(tab: .launches, selection: $tabSelection)
         }
     }
 }
 
 struct MenuBarView_Previews: PreviewProvider {
+    let tabs: [CustomTabBarItem] = [
+        .daily,
+        .launches]
+    
     static var previews: some View {
         MenuBarView()
     }

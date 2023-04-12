@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F39DB59229E57837000A2376 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59129E57837000A2376 /* CustomTabBar.swift */; };
+		F33032CF29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33032CE29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift */; };
+		F39DB59229E57837000A2376 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59129E57837000A2376 /* CustomTabBarView.swift */; };
 		F39DB59429E5BFAF000A2376 /* DailyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59329E5BFAF000A2376 /* DailyImageView.swift */; };
 		F39DB59829E5C655000A2376 /* DailyViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59729E5C655000A2376 /* DailyViewViewModel.swift */; };
 		F39DB59A29E5C6F6000A2376 /* DailyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59929E5C6F6000A2376 /* DailyDescriptionView.swift */; };
 		F39DB59D29E5DD52000A2376 /* DailyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59C29E5DD52000A2376 /* DailyViewModel.swift */; };
+		F39DB5A029E5F0D1000A2376 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59F29E5F0D1000A2376 /* Responses.swift */; };
 		F3CD5CAC29E2D34C00CFEF8A /* NFCtron_ukolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CAB29E2D34C00CFEF8A /* NFCtron_ukolApp.swift */; };
 		F3CD5CAE29E2D34C00CFEF8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CAD29E2D34C00CFEF8A /* ContentView.swift */; };
 		F3CD5CB029E2D34D00CFEF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CD5CAF29E2D34D00CFEF8A /* Assets.xcassets */; };
@@ -22,7 +24,7 @@
 		F3CD5CD729E2D3DC00CFEF8A /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CD629E2D3DC00CFEF8A /* MenuBarView.swift */; };
 		F3CD5CD929E2D3E900CFEF8A /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CD829E2D3E900CFEF8A /* DailyView.swift */; };
 		F3CD5CDB29E2D3FB00CFEF8A /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CDA29E2D3FB00CFEF8A /* LaunchesView.swift */; };
-		F3CD5CDF29E2FE4200CFEF8A /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItem.swift */; };
+		F3CD5CDF29E2FE4200CFEF8A /* CustomTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F39DB59129E57837000A2376 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		F33032CE29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
+		F39DB59129E57837000A2376 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		F39DB59329E5BFAF000A2376 /* DailyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImageView.swift; sourceTree = "<group>"; };
 		F39DB59729E5C655000A2376 /* DailyViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewViewModel.swift; sourceTree = "<group>"; };
 		F39DB59929E5C6F6000A2376 /* DailyDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDescriptionView.swift; sourceTree = "<group>"; };
 		F39DB59C29E5DD52000A2376 /* DailyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewModel.swift; sourceTree = "<group>"; };
+		F39DB59F29E5F0D1000A2376 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		F3CD5CA829E2D34C00CFEF8A /* NFCtron-ukol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFCtron-ukol.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CD5CAB29E2D34C00CFEF8A /* NFCtron_ukolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCtron_ukolApp.swift; sourceTree = "<group>"; };
 		F3CD5CAD29E2D34C00CFEF8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,7 +65,7 @@
 		F3CD5CD629E2D3DC00CFEF8A /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		F3CD5CD829E2D3E900CFEF8A /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
 		F3CD5CDA29E2D3FB00CFEF8A /* LaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesView.swift; sourceTree = "<group>"; };
-		F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
+		F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		F39DB59529E5C5F8000A2376 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				F39DB59F29E5F0D1000A2376 /* Responses.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -194,10 +199,11 @@
 		F3CD5CDD29E2FDE900CFEF8A /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItem.swift */,
-				F39DB59129E57837000A2376 /* CustomTabBar.swift */,
+				F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItemView.swift */,
+				F39DB59129E57837000A2376 /* CustomTabBarView.swift */,
 				F39DB59329E5BFAF000A2376 /* DailyImageView.swift */,
 				F39DB59929E5C6F6000A2376 /* DailyDescriptionView.swift */,
+				F33032CE29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -332,10 +338,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39DB5A029E5F0D1000A2376 /* Responses.swift in Sources */,
+				F33032CF29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift in Sources */,
 				F39DB59429E5BFAF000A2376 /* DailyImageView.swift in Sources */,
-				F3CD5CDF29E2FE4200CFEF8A /* CustomTabBarItem.swift in Sources */,
+				F3CD5CDF29E2FE4200CFEF8A /* CustomTabBarItemView.swift in Sources */,
 				F3CD5CD929E2D3E900CFEF8A /* DailyView.swift in Sources */,
-				F39DB59229E57837000A2376 /* CustomTabBar.swift in Sources */,
+				F39DB59229E57837000A2376 /* CustomTabBarView.swift in Sources */,
 				F3CD5CD729E2D3DC00CFEF8A /* MenuBarView.swift in Sources */,
 				F39DB59D29E5DD52000A2376 /* DailyViewModel.swift in Sources */,
 				F3CD5CAE29E2D34C00CFEF8A /* ContentView.swift in Sources */,
@@ -514,7 +522,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jangutwirth.NFCtron-ukol";
+				PRODUCT_BUNDLE_IDENTIFIER = "honzagut.NFCtron-ukol";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -543,7 +551,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jangutwirth.NFCtron-ukol";
+				PRODUCT_BUNDLE_IDENTIFIER = "honzagut.NFCtron-ukol";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
