@@ -1,35 +1,28 @@
 //
-//  DailyViewViewModel.swift
+//  LaunchesViewViewModel.swift
 //  NFCtron-ukol
 //
-//  Created by Jan Gutwirth on 11.04.2023.
+//  Created by Jan Gutwirth on 13.04.2023.
 //
 
 import SwiftUI
 
-enum DataReadStatus: DynamicProperty {
-    case initial
-    case started
-    case success
-    case failure
-}
-
-class DailyViewViewModel: ObservableObject {
+class LaunchesViewViewModel: ObservableObject {
     
-    @State var model: DailyViewModel
+    @State var model: LaunchesViewModel
     
     @Published var readStatus: DataReadStatus
     
-    init() {
-        model = DailyViewModel()
-        self.readStatus = .initial
+    init(status: DataReadStatus) {
+        model = LaunchesViewModel(pinnedLaunches: [], unpinnedLaunches: [])
+        self.readStatus = status
         getData()
     }
     
     func getData() {
 //        print("Starting")
         readStatus = .started
-        let tmpUrl = URL(string: "https://api.nasa.gov/planetary/apod?api_key=Nbn5aYAM5G6ZHd00OdTjfi3AfhuKaLj2vXYJqdYc")
+        let tmpUrl = URL(string: "https://api.spacexdata.com/v4/launches")
         guard let url = tmpUrl else{
             print("URL FAILED")
             return
@@ -43,10 +36,10 @@ class DailyViewViewModel: ObservableObject {
                 return
             }
             else if let data = data {
-                let postResponse: DailyURLResponse
+                let postResponse: [Launch]
                 do {
 //                    print("BEFORE DECODING")
-                    postResponse = try JSONDecoder().decode(DailyURLResponse.self, from: data)
+                    postResponse = try JSONDecoder().decode([Launch].self, from: data)
 //                    print("AFTER DECODING")
 //                    print(postResponse)
                     self.saveDataToModel(response: postResponse)
@@ -63,13 +56,9 @@ class DailyViewViewModel: ObservableObject {
 //        print("ENDING")
     }
     
-    func saveDataToModel(response: DailyURLResponse) {
-        model.title = response.title
-        model.description = response.explanation
-        model.date = response.date
-        model.imageURL = response.url
-        model.hdImageURL = response.hdurl
-//        print(model)
+    
+    func saveDataToModel(response: [Launch]) {
+        model.unpinnedLaunches = response
         readStatus = .success
     }
     

@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3278E0F29E7E43F001A5017 /* LaunchItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3278E0E29E7E43F001A5017 /* LaunchItemView.swift */; };
+		F3278E1129E7E605001A5017 /* LivestreamButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3278E1029E7E605001A5017 /* LivestreamButtonView.swift */; };
+		F3278E1329E7E88F001A5017 /* WikiButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3278E1229E7E88F001A5017 /* WikiButtonView.swift */; };
+		F3278E1529E7EE30001A5017 /* CustomCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3278E1429E7EE30001A5017 /* CustomCarouselView.swift */; };
+		F3278E1729E7F042001A5017 /* LaunchesViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3278E1629E7F042001A5017 /* LaunchesViewViewModel.swift */; };
+		F3278E1C29E7F1AC001A5017 /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3278E1B29E7F1AC001A5017 /* LaunchesViewModel.swift */; };
 		F33032CF29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33032CE29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift */; };
+		F340589329E87E0900494878 /* TimeCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340589229E87E0900494878 /* TimeCountdownView.swift */; };
 		F39DB59229E57837000A2376 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59129E57837000A2376 /* CustomTabBarView.swift */; };
 		F39DB59429E5BFAF000A2376 /* DailyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59329E5BFAF000A2376 /* DailyImageView.swift */; };
 		F39DB59829E5C655000A2376 /* DailyViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59729E5C655000A2376 /* DailyViewViewModel.swift */; };
@@ -45,7 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3278E0E29E7E43F001A5017 /* LaunchItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchItemView.swift; sourceTree = "<group>"; };
+		F3278E1029E7E605001A5017 /* LivestreamButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivestreamButtonView.swift; sourceTree = "<group>"; };
+		F3278E1229E7E88F001A5017 /* WikiButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiButtonView.swift; sourceTree = "<group>"; };
+		F3278E1429E7EE30001A5017 /* CustomCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarouselView.swift; sourceTree = "<group>"; };
+		F3278E1629E7F042001A5017 /* LaunchesViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewViewModel.swift; sourceTree = "<group>"; };
+		F3278E1B29E7F1AC001A5017 /* LaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
 		F33032CE29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
+		F340589229E87E0900494878 /* TimeCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCountdownView.swift; sourceTree = "<group>"; };
 		F39DB59129E57837000A2376 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		F39DB59329E5BFAF000A2376 /* DailyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImageView.swift; sourceTree = "<group>"; };
 		F39DB59729E5C655000A2376 /* DailyViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewViewModel.swift; sourceTree = "<group>"; };
@@ -93,6 +107,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3278E1829E7F075001A5017 /* DailyView */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItemView.swift */,
+				F39DB59129E57837000A2376 /* CustomTabBarView.swift */,
+				F39DB59329E5BFAF000A2376 /* DailyImageView.swift */,
+				F39DB59929E5C6F6000A2376 /* DailyDescriptionView.swift */,
+				F33032CE29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift */,
+			);
+			path = DailyView;
+			sourceTree = "<group>";
+		};
+		F3278E1929E7F097001A5017 /* LaunchesView */ = {
+			isa = PBXGroup;
+			children = (
+				F3278E0E29E7E43F001A5017 /* LaunchItemView.swift */,
+				F3278E1029E7E605001A5017 /* LivestreamButtonView.swift */,
+				F3278E1229E7E88F001A5017 /* WikiButtonView.swift */,
+				F3278E1429E7EE30001A5017 /* CustomCarouselView.swift */,
+				F340589229E87E0900494878 /* TimeCountdownView.swift */,
+			);
+			path = LaunchesView;
+			sourceTree = "<group>";
+		};
 		F39DB59529E5C5F8000A2376 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				F39DB59729E5C655000A2376 /* DailyViewViewModel.swift */,
+				F3278E1629E7F042001A5017 /* LaunchesViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -113,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				F39DB59C29E5DD52000A2376 /* DailyViewModel.swift */,
+				F3278E1B29E7F1AC001A5017 /* LaunchesViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,11 +239,8 @@
 		F3CD5CDD29E2FDE900CFEF8A /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				F3CD5CDE29E2FE4200CFEF8A /* CustomTabBarItemView.swift */,
-				F39DB59129E57837000A2376 /* CustomTabBarView.swift */,
-				F39DB59329E5BFAF000A2376 /* DailyImageView.swift */,
-				F39DB59929E5C6F6000A2376 /* DailyDescriptionView.swift */,
-				F33032CE29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift */,
+				F3278E1929E7F097001A5017 /* LaunchesView */,
+				F3278E1829E7F075001A5017 /* DailyView */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -338,14 +375,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3278E1729E7F042001A5017 /* LaunchesViewViewModel.swift in Sources */,
 				F39DB5A029E5F0D1000A2376 /* Responses.swift in Sources */,
 				F33032CF29E72C5600C95334 /* CustomTabBarItemsPreferenceKey.swift in Sources */,
 				F39DB59429E5BFAF000A2376 /* DailyImageView.swift in Sources */,
+				F3278E0F29E7E43F001A5017 /* LaunchItemView.swift in Sources */,
+				F3278E1129E7E605001A5017 /* LivestreamButtonView.swift in Sources */,
 				F3CD5CDF29E2FE4200CFEF8A /* CustomTabBarItemView.swift in Sources */,
 				F3CD5CD929E2D3E900CFEF8A /* DailyView.swift in Sources */,
+				F3278E1529E7EE30001A5017 /* CustomCarouselView.swift in Sources */,
+				F340589329E87E0900494878 /* TimeCountdownView.swift in Sources */,
 				F39DB59229E57837000A2376 /* CustomTabBarView.swift in Sources */,
 				F3CD5CD729E2D3DC00CFEF8A /* MenuBarView.swift in Sources */,
 				F39DB59D29E5DD52000A2376 /* DailyViewModel.swift in Sources */,
+				F3278E1C29E7F1AC001A5017 /* LaunchesViewModel.swift in Sources */,
+				F3278E1329E7E88F001A5017 /* WikiButtonView.swift in Sources */,
 				F3CD5CAE29E2D34C00CFEF8A /* ContentView.swift in Sources */,
 				F3CD5CDB29E2D3FB00CFEF8A /* LaunchesView.swift in Sources */,
 				F39DB59A29E5C6F6000A2376 /* DailyDescriptionView.swift in Sources */,

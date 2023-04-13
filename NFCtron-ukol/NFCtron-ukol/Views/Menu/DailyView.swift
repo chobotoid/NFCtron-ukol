@@ -11,14 +11,15 @@ struct DailyView: View {
         
     @ObservedObject var vm: DailyViewViewModel
         
-    @State var title: String
+//    @State var title: String
     
-    @State var description: String
+//    @State var description: String
     
     init() {
-        self.title = "Title"
-        self.description = "Description"
+//        self.title = "Title"
+//        self.description = "Description"
         vm = DailyViewViewModel()
+//        vm.getData()
     }
     
     var body: some View {

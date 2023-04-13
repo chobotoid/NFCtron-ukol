@@ -8,8 +8,51 @@
 import SwiftUI
 
 struct LaunchesView: View {
+    
+    @ObservedObject var vm: LaunchesViewViewModel
+        
+    init() {
+        self.vm = LaunchesViewViewModel(status: .initial)
+//        vm.getData()
+    }
+    
     var body: some View {
-        Text("Launches, World!")
+        VStack (spacing: 100) {
+            VStack (spacing: 15) {
+                HStack {
+                    Text("Pinned")
+                        .font(.title)
+                    Spacer()
+                    Text("Unpin all")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
+                VStack (spacing: 30) {
+                    ForEach(vm.model.pinnedLaunches.reversed(), id: \.uid) { launch in
+                        LaunchItemView(launch: launch, pinned: true)
+                    }
+                }
+            }
+            VStack (spacing: 15) {
+                HStack {
+                    Text("Upcoming")
+                        .font(.title)
+                    Spacer()
+                    Text("Sort by")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
+                if vm.readStatus != .success {
+                    ProgressView("Loading Launches")
+                }
+                else{
+                    CustomCarouselView(launches: vm.model.unpinnedLaunches.reversed())
+                }
+            }
+            Spacer()
+        }
+        .padding(.horizontal, 40)
+        .background(Color("BackgroundColor"))
     }
 }
 

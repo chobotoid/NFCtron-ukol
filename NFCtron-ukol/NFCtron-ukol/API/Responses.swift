@@ -5,34 +5,88 @@
 //  Created by Jan Gutwirth on 11.04.2023.
 //
 
-import Foundation
+import SwiftUI
 
-struct URLResponse: Decodable {
+struct DailyURLResponse: Decodable {
     
     var error: CustomError?
     
-    let copyright: String
+    let copyright: String?
     
-    let date: String
+    let date: String?
     
-    let explanation: String
+    let explanation: String?
     
-    let hdurl: String
+    let hdurl: String?
     
-    let media_type: String
+    let media_type: String?
     
-    let service_version: String
+    let service_version: String?
     
-    let title: String
+    let title: String?
     
-    let url: String
+    let url: String?
     
 }
 
 struct CustomError: Decodable {
     
-    var code: String
+    var code: String?
     
-    var message: String
+    var message: String?
+    
+}
+
+struct LaunchesURLResponse: Decodable {
+    
+    
+    var launches: [Launch]
+//    var launches: Dictionary<String, Launch>
+    
+}
+
+struct Launch: Decodable {
+    
+    var uid: UUID = UUID()
+    
+    var links: CustomLinks?
+    
+    var date_utc: String?
+    
+    var name: String?
+    
+    var details: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case links
+        case date_utc
+        case name
+        case details
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        links = try container.decodeIfPresent(CustomLinks.self, forKey: .links)
+        date_utc = try container.decodeIfPresent(String.self, forKey: .date_utc)
+        name = try container.decodeIfPresent(String.self, forKey: .name)
+        details = try container.decodeIfPresent(String.self, forKey: .details)
+    }
+    
+    init(links: CustomLinks, static_fire_date_utc: String, name: String, details: String) {
+        self.links = links
+        self.date_utc = static_fire_date_utc
+        self.name = name
+        self.details = details
+        self.uid = UUID()
+//        print("\(uid.uuidString) -- INIT")
+    }
+}
+
+struct CustomLinks: Decodable {
+    
+    var webcast: String?
+    
+    var wikipedia: String?
     
 }
