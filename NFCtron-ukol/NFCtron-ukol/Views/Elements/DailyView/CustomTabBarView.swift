@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Custom TabView like view, pretty complex, had help from youtube, should work as far as I know
 struct CustomTabBarView<Content:View>: View {
     
     @Binding var selection: CustomTabBarItem

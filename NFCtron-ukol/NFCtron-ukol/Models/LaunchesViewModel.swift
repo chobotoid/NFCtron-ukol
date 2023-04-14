@@ -7,10 +7,9 @@
 
 import Foundation
 
+/// Model for LaunchesView containing all pinned and unpinned launches
 class LaunchesViewModel: ObservableObject {
-    
-//    @Published var
-    
+        
     @Published var pinnedLaunches: [Launch]
     
     @Published var unpinnedLaunches: [Launch]
@@ -19,12 +18,8 @@ class LaunchesViewModel: ObservableObject {
         self.pinnedLaunches = pinnedLaunches
         self.unpinnedLaunches = unpinnedLaunches
     }
- 
     
-//    func addUnpinnedLaunches(launches: [Launch]) {
-//        self.unpinnedLaunches = launches
-//    }
-    
+    /// those methods are unfortunately not used since I didn't find a way to use them without breaking the whole app
     func pinLaunch(launch: Launch) {
         if let index = unpinnedLaunches.firstIndex(where: {$0.uid == launch.uid}) {
             pinnedLaunches.append(launch)

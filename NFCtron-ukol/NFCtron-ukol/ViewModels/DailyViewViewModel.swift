@@ -26,12 +26,12 @@ class DailyViewViewModel: ObservableObject {
         getData()
     }
     
+    /// Method for getting data from api and saving them into model (through saveDataToModel method)
     func getData() {
-//        print("Starting")
         readStatus = .started
         let tmpUrl = URL(string: "https://api.nasa.gov/planetary/apod?api_key=Nbn5aYAM5G6ZHd00OdTjfi3AfhuKaLj2vXYJqdYc")
         guard let url = tmpUrl else{
-            print("URL FAILED")
+            print("URL FAILED in \(#function)")
             return
         }
         let session = URLSession(configuration: .default)
@@ -45,10 +45,7 @@ class DailyViewViewModel: ObservableObject {
             else if let data = data {
                 let postResponse: DailyURLResponse
                 do {
-//                    print("BEFORE DECODING")
                     postResponse = try JSONDecoder().decode(DailyURLResponse.self, from: data)
-//                    print("AFTER DECODING")
-//                    print(postResponse)
                     self.saveDataToModel(response: postResponse)
                 }
                 catch {
@@ -56,20 +53,22 @@ class DailyViewViewModel: ObservableObject {
                 }
             }
             else{
-//                print("ELSE")
+                print("dataTask failed in \(#function)")
             }
         }
         task.resume()
-//        print("ENDING")
     }
     
+    
+    
+    /// method for data saving from API call response to model
+    /// - Parameter response: response of the API in form of JSON decoded struct (similar to model, might not be needed to have those 2 structs separated)
     func saveDataToModel(response: DailyURLResponse) {
         model.title = response.title
         model.description = response.explanation
         model.date = response.date
         model.imageURL = response.url
         model.hdImageURL = response.hdurl
-//        print(model)
         readStatus = .success
     }
     

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Main menu / primary view loaded when app starts
 struct MenuBarView: View {
     
     @State private var tabSelection: CustomTabBarItem = .daily
@@ -30,4 +31,3 @@ struct MenuBarView_Previews: PreviewProvider {
         MenuBarView()
     }
 }
-//

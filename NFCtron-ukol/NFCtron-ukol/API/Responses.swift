@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// API response for DailyView data
 struct DailyURLResponse: Decodable {
     
     var error: CustomError?
@@ -37,14 +38,7 @@ struct CustomError: Decodable {
     
 }
 
-struct LaunchesURLResponse: Decodable {
-    
-    
-    var launches: [Launch]
-//    var launches: Dictionary<String, Launch>
-    
-}
-
+/// Struct for holding response and data of one launch for LaunchView to be used in
 struct Launch: Decodable {
     
     var uid: UUID = UUID()
@@ -79,7 +73,6 @@ struct Launch: Decodable {
         self.name = name
         self.details = details
         self.uid = UUID()
-//        print("\(uid.uuidString) -- INIT")
     }
 }
 

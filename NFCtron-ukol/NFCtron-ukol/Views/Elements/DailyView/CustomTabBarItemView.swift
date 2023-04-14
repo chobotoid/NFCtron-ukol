@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Custom TabBar like view, painful to assemble, should be working fine though
 struct CustomTabBarItemView: View {
     
     let tabs: [CustomTabBarItem]
@@ -22,7 +23,6 @@ struct CustomTabBarItemView: View {
                     }
             }
         }
-//        .background(.blue)
     }
 }
 
@@ -40,7 +40,6 @@ extension CustomTabBarItemView {
                 .font(.caption2)
         }
         .padding(.vertical, 8)
-//        .border(.blue)
     }
     
     private func switchToTab(tab: CustomTabBarItem) {
@@ -50,11 +49,6 @@ extension CustomTabBarItemView {
     }
     
 }
-
-//struct CustomTabBarItem: Hashable {
-//    let iconName: String
-//    let tabName: String
-//}
 
 enum CustomTabBarItem: Hashable {
     case daily, launches

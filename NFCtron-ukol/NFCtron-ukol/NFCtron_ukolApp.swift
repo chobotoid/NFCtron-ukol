@@ -5,8 +5,6 @@
 //  Created by Jan Gutwirth on 09.04.2023.
 //
 
-
-//api key = Nbn5aYAM5G6ZHd00OdTjfi3AfhuKaLj2vXYJqdYc
 import SwiftUI
 
 @main
