@@ -7,13 +7,13 @@
 
 import SwiftUI
 
+/// One of the 2 main views to be used in the app, unfortunately sorting and pinning doesn't work
 struct LaunchesView: View {
     
     @ObservedObject var vm: LaunchesViewViewModel
         
     init() {
         self.vm = LaunchesViewViewModel(status: .initial)
-//        vm.getData()
     }
     
     var body: some View {

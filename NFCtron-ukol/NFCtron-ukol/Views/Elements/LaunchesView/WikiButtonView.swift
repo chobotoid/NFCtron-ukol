@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View containing the Wiki button
 struct WikiButtonView: View {
     
     var url: URL?

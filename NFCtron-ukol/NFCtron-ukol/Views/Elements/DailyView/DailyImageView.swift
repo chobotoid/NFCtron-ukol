@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View for "formatting" and loading an Image from url to be used in DailyView, doesn't seem like it when using the app, but loads one lower quality picture and then one higher quality picture (or at least it should)
 struct DailyImageView: View {
     
     var title: String
@@ -16,7 +17,6 @@ struct DailyImageView: View {
     var imageURL: String
     
     var hdImageURL: String
-//    @ObservedObject var
     
     init(title: String, date: String, imageURL: String, hdImageURL: String) {
         self.title = title
@@ -34,7 +34,6 @@ struct DailyImageView: View {
                 VStack (alignment: .leading) {
                     Text(date)
                         .font(.caption)
-//                        .border(.black)
                     Text("Today")
                         .font(.largeTitle)
                 }
@@ -44,18 +43,12 @@ struct DailyImageView: View {
             .padding(25)
         }
         .frame(height: 500)
-//        .padding(40)
-//        .border(.blue)
     }
     
     @ViewBuilder var image: some View {
         if imageURL == "DEFAULT" {
             Color.gray
-//                .resizable()
-//                .foregroundColor(.white)
-//                .background(.black)
                 .cornerRadius(35)
-//                .border(.yellow)
         }
         else {
             AsyncImage(
@@ -65,27 +58,18 @@ struct DailyImageView: View {
                         .cornerRadius(35)
                 },
                 placeholder: {
-//                    ZStack{
-                        AsyncImage(
-                            url: URL(string: imageURL),
-                            content: { image in
-                                image.resizable()
-                                    .cornerRadius(35)
-                            },
-                            placeholder: {
-                                ProgressView()
-                            }
-                        )
-//                        Text("Hello There")
-//                            .foregroundColor(.white)
-//                            .font(.largeTitle)
-//                    }
+                    AsyncImage(
+                        url: URL(string: imageURL),
+                        content: { image in
+                            image.resizable()
+                                .cornerRadius(35)
+                        },
+                        placeholder: {
+                            ProgressView()
+                        }
+                    )
                 }
             )
-//            AsyncImage(url: URL(string: imageURL), scale: 0.02, transaction: Transaction(animation: .default)) { image in
-//                image.image?.resizable()
-//                    .cornerRadius(35)
-//            }
         }
     }
     

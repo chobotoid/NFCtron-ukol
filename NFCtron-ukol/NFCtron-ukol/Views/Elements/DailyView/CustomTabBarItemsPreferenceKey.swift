@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// This file contains all parts of CustomTabBarView needed for it to work
+
 struct CustomTabBarItemsPreferenceKey: PreferenceKey {
     
     static var defaultValue: [CustomTabBarItem] = []

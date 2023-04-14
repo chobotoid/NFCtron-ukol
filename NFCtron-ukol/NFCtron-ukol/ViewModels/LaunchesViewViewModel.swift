@@ -7,20 +7,23 @@
 
 import SwiftUI
 
+/// ViewModel for the LaunchesView
 class LaunchesViewViewModel: ObservableObject {
     
     @State var model: LaunchesViewModel
     
     @Published var readStatus: DataReadStatus
     
+    /// Initializer for this ViewModel
+    /// - Parameter status: default status of data reading, inconsistent to the other ViewModel, probably could be reworked without an issue
     init(status: DataReadStatus) {
         model = LaunchesViewModel(pinnedLaunches: [], unpinnedLaunches: [])
         self.readStatus = status
         getData()
     }
     
+    /// Method for getting data from API for the DailyView to be used in, similar to the LaunchesVIewViewModel method getData
     func getData() {
-//        print("Starting")
         readStatus = .started
         let tmpUrl = URL(string: "https://api.spacexdata.com/v4/launches")
         guard let url = tmpUrl else{
@@ -38,10 +41,7 @@ class LaunchesViewViewModel: ObservableObject {
             else if let data = data {
                 let postResponse: [Launch]
                 do {
-//                    print("BEFORE DECODING")
                     postResponse = try JSONDecoder().decode([Launch].self, from: data)
-//                    print("AFTER DECODING")
-//                    print(postResponse)
                     self.saveDataToModel(response: postResponse)
                 }
                 catch {
@@ -49,14 +49,15 @@ class LaunchesViewViewModel: ObservableObject {
                 }
             }
             else{
-//                print("ELSE")
+                print("dataTask failed in \(#function)")
             }
         }
         task.resume()
-//        print("ENDING")
     }
     
     
+    /// Method for data saving from the API call response to the model
+    /// - Parameter response: API call response
     func saveDataToModel(response: [Launch]) {
         model.unpinnedLaunches = response
         readStatus = .success

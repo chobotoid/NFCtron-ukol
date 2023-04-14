@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View containing carousel view for the LaunchesVIew, painful to create as much as to look at, however should be working
 struct CustomCarouselView: View {
     
     var launches: [Launch]

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Time countdown view for LaunchesView
 struct TimeCountdownView: View {
         
     let dateString: String

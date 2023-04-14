@@ -22,7 +22,6 @@
 		F39DB59D29E5DD52000A2376 /* DailyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59C29E5DD52000A2376 /* DailyViewModel.swift */; };
 		F39DB5A029E5F0D1000A2376 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39DB59F29E5F0D1000A2376 /* Responses.swift */; };
 		F3CD5CAC29E2D34C00CFEF8A /* NFCtron_ukolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CAB29E2D34C00CFEF8A /* NFCtron_ukolApp.swift */; };
-		F3CD5CAE29E2D34C00CFEF8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CAD29E2D34C00CFEF8A /* ContentView.swift */; };
 		F3CD5CB029E2D34D00CFEF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CD5CAF29E2D34D00CFEF8A /* Assets.xcassets */; };
 		F3CD5CB329E2D34D00CFEF8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CD5CB229E2D34D00CFEF8A /* Preview Assets.xcassets */; };
 		F3CD5CBD29E2D34D00CFEF8A /* NFCtron_ukolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5CBC29E2D34D00CFEF8A /* NFCtron_ukolTests.swift */; };
@@ -68,7 +67,6 @@
 		F39DB59F29E5F0D1000A2376 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		F3CD5CA829E2D34C00CFEF8A /* NFCtron-ukol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFCtron-ukol.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CD5CAB29E2D34C00CFEF8A /* NFCtron_ukolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCtron_ukolApp.swift; sourceTree = "<group>"; };
-		F3CD5CAD29E2D34C00CFEF8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3CD5CAF29E2D34D00CFEF8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3CD5CB229E2D34D00CFEF8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3CD5CB829E2D34D00CFEF8A /* NFCtron-ukolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NFCtron-ukolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,7 +183,6 @@
 				F39DB59529E5C5F8000A2376 /* API */,
 				F3CD5CD529E2D3BE00CFEF8A /* Views */,
 				F3CD5CAB29E2D34C00CFEF8A /* NFCtron_ukolApp.swift */,
-				F3CD5CAD29E2D34C00CFEF8A /* ContentView.swift */,
 				F3CD5CAF29E2D34D00CFEF8A /* Assets.xcassets */,
 				F3CD5CB129E2D34D00CFEF8A /* Preview Content */,
 			);
@@ -390,7 +387,6 @@
 				F39DB59D29E5DD52000A2376 /* DailyViewModel.swift in Sources */,
 				F3278E1C29E7F1AC001A5017 /* LaunchesViewModel.swift in Sources */,
 				F3278E1329E7E88F001A5017 /* WikiButtonView.swift in Sources */,
-				F3CD5CAE29E2D34C00CFEF8A /* ContentView.swift in Sources */,
 				F3CD5CDB29E2D3FB00CFEF8A /* LaunchesView.swift in Sources */,
 				F39DB59A29E5C6F6000A2376 /* DailyDescriptionView.swift in Sources */,
 				F3CD5CAC29E2D34C00CFEF8A /* NFCtron_ukolApp.swift in Sources */,

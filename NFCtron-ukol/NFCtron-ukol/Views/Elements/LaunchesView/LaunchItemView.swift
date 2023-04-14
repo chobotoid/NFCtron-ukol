@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View containing info about one Launch
 struct LaunchItemView: View {
     
     var pinned: Bool
@@ -26,7 +27,6 @@ struct LaunchItemView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(height: 30)
-//                        .background(.blue)
                         .cornerRadius(45)
                     VStack (alignment: .leading) {
                         Text(launch.name ?? "")

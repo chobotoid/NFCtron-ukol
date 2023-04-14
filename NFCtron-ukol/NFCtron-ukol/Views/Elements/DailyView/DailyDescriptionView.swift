@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View containing description for the DailyView
 struct DailyDescriptionView: View {
     
     var title: String
@@ -19,14 +20,13 @@ struct DailyDescriptionView: View {
             Text(description)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-//        .border(.black)
     }
 }
 
 struct DailyDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
-        var title = "Title"
-        var desc = "wdiajowi jaowijoa idwjdoaiwj doi jowijodija oiwj oaiwj odi waoi oi wdjaodiaowijaowijdoa awjo idaw"
+        let title = "Title"
+        let desc = "wdiajowi jaowijoa idwjdoaiwj doi jowijodija oiwj oaiwj odi waoi oi wdjaodiaowijaowijdoa awjo idaw"
         DailyDescriptionView(title: title, description: desc)
     }
 }

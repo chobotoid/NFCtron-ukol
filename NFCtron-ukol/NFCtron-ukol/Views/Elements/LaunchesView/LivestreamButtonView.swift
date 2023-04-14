@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View containing the livestream button
 struct LivestreamButtonView: View {
     
     var url: URL?
